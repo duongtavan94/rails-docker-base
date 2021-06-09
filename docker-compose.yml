@@ -39,6 +39,8 @@ services:
     depends_on:
       - app
       - redis
+    links:
+      - app
     tty: true
     stdin_open: true
     volumes:
