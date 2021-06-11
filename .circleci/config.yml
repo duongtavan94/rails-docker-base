@@ -1,0 +1,9 @@
+deploy:
+  machine: true
+  steps:
+    - add_ssh_keys:
+        fingerprints:
+          - $FINGERPRINT
+    - run:
+        name: Deploy over SSH
+        command: ssh -o StrictHostKeyChecking=no -v $SSH_USER@$SSH_HOST "sh ./deploy.sh $CIRCLE_BRANCH"
