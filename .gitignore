@@ -68,5 +68,6 @@ tmp
 yarn.lock
 .env
 Gemfile.lock
+config/credentials.yml.enc
 
 /public/uploads
