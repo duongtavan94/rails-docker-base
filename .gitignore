@@ -71,3 +71,5 @@ Gemfile.lock
 config/credentials.yml.enc
 
 /public/uploads
+
+db/schema.rb

@@ -33,6 +33,7 @@ gem "sidekiq-failures"                                 # Sidekiqの失敗Jobの�
 gem "sidekiq-scheduler", "~> 3.0.1"                    # Sidekiqでスケジューリング実行
 gem "sidekiq-unique-jobs", "~> 6.0.22"                 # Sidekiqで同じジョブが複数実行されないようにする
 gem "sinatra", require: false                          # Rubyフレームワーク (Sidekiqのダッシュボード表示に必要)
+gem "devise"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
