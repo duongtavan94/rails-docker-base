@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Deploy over SSH
-          command: ssh -o StrictHostKeyChecking=no -v $SSH_USER@$SSH_HOST "touch test.txt"
+          command: ssh -o StrictHostKeyChecking=no -v $SSH_USER@$SSH_HOST "sh ./deploy.sh $CIRCLE_BRANCH"
 
 workflows:
   version: 2
