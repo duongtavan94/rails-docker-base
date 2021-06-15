@@ -2,6 +2,6 @@
 
 class ElbController < ActionController::Base
   def healthcheck
-    render plain: "ok3"
+    render plain: "ok4"
   end
 end
